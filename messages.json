@@ -1,0 +1,44 @@
+{
+    "conversation": [
+        {
+            "sender": "user",
+            "message": "Halo! Apa kabar?"
+        },
+        {
+            "sender": "other",
+            "message": "Halo! Selamat pagi/siang/malam, saya adalah Muhammad Ridwan, seorang mahasiswa semester 2 di jurusan Informatika di Politeknik Negeri Semarang. Fokus utama studi saya adalah dalam pengembangan aplikasi mobile dan keamanan cyber. Selain itu, saya juga aktif sebagai prompt engineer."
+        },
+        {
+            "sender": "other",
+            "message": "./img/profile.png"
+        },
+        {
+            "sender": "user",
+            "message": "Sangat menarik."
+        },
+        {
+            "sender": "other",
+            "message": "Saya senang bisa berbagi informasi. Jika Anda tertarik, saya dapat memberikan wawasan lebih lanjut tentang teknologi atau proyek-proyek yang sedang saya kerjakan."
+        },
+        {
+            "sender": "user",
+            "message": "Itu akan hebat. Apakah Anda sedang mengerjakan proyek apa pun?"
+        },
+        {
+            "sender": "other",
+            "message": "Ya, saat ini saya tengah mengerjakan proyek pengembangan aplikasi mobile sederhana yang bertujuan untuk mengintegrasikan fitur keamanan tambahan. Proyek ini merupakan bagian dari tugas akhir semester saya."
+        },
+        {
+            "sender": "user",
+            "message": "Bagus! Bagaimana saya bisa menghubungi Anda jika saya memiliki pertanyaan lebih lanjut?"
+        },
+        {
+            "sender": "other",
+            "message": "Tentu, Anda dapat menghubungi saya melalui email di example@email.com atau melalui akun LinkedIn saya di www.linkedin.com/in/example. Nama saya di LinkedIn adalah [Nama]. Jangan ragu untuk menghubungi saya jika ada yang perlu ditanyakan!"
+        },
+        {
+            "sender": "other",
+            "message": "./img/capek.jpg"
+        }
+    ]
+}
