@@ -3,15 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const chatWindow = document.getElementById('chat-window');
     const sendBtn = document.getElementById('send-btn');
 
-    // const sendMessage = () => {
-    //     const message = messageInput.value.trim();
-    //     if (message) {
-    //         addMessage(message, 'user');
-    //         messageInput.value = '';
-    //         scrollToBottom();
-    //     }
-    // };
-
     const sendMessage = () => {
         const message = messageInput.value.trim();
         if (message) {
@@ -46,11 +37,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const imageElement = document.createElement('img');
             imageElement.src = imagePath;
             imageElement.classList.add('image-message');
+            imageElement.addEventListener('click', () => openModal(imagePath));
             messageElement.appendChild(imageElement);
         } else {
             messageElement.textContent = message;
         }
-    
+
         chatWindow.appendChild(messageElement);
         scrollToBottom();
     }
@@ -83,9 +75,31 @@ document.addEventListener('DOMContentLoaded', () => {
                     addMessage(item.message, item.sender);
                     index++;
                     showNextMessage();
-                }, 1000); // Delay for 2 seconds
+                }, 500); // Delay for 0.5 seconds
             }
         }
         showNextMessage();
+    }
+
+    // Fungsi untuk membuka modal
+    function openModal(imagePath) {
+        const modal = document.getElementById('image-modal');
+        const modalImg = document.getElementById('modal-image');
+        const span = document.getElementsByClassName('close')[0];
+
+        modal.style.display = 'block';
+        modalImg.src = imagePath;
+
+        // Tutup modal saat pengguna mengklik (x)
+        span.onclick = function() {
+            modal.style.display = 'none';
+        };
+
+        // Tutup modal saat pengguna mengklik di luar gambar
+        modal.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        };
     }
 });
